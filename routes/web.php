@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/comments/{operetor}', function ()
+{
+    switch () {
+        case 'value':
+            # code...
+            break;
+        
+        default:
+            # code...
+            break;
+    }
+
+return view('greets.greeting');
+});
