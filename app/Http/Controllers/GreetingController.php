@@ -40,6 +40,7 @@ class GreetingController extends Controller
         }
     }
 
+
     public function word($word)
     {
         return view('greets.greeting', ['word' => $word]);
