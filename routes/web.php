@@ -17,17 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/comments/{operetor}', function ()
-{
-    switch () {
-        case 'value':
-            # code...
-            break;
-        
-        default:
-            # code...
-            break;
-    }
+Route::get('comments/random', [\App\Http\Controllers\GreetingController::class, 'random']);
 
-return view('greets.greeting');
-});
+Route::get('/comments/{operetor}', [\App\Http\Controllers\GreetingController::class, 'operetor']);
+
+Route::get('comments/freeword/{word}', [\App\Http\Controllers\GreetingController::class, 'word']);
